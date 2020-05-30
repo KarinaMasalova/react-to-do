@@ -1,7 +1,12 @@
 import React from 'react';
 
-const ToDoListItem = () => {
-  return <span>Learn React</span>;
+const ToDoListItem = ( { label, important = false } ) => {
+
+  const style = {
+    color: important ? 'tomato' : 'black',
+  }
+
+  return <span style={ style }>{ label }</span>;
 };
 
 export default ToDoListItem;
