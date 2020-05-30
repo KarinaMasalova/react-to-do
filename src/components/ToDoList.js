@@ -5,9 +5,7 @@ const ToDoList = ({ toDos }) => {
   const elements = toDos.map((item) => {
     return (
       <li>
-        <ToDoListItem
-          label={ item.label }
-          important={ item.important }/>
+        <ToDoListItem { ...item }/>
       </li>
     );
   });
