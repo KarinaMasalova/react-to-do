@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppHeader from './components/AppHeader';
-import SearchPanel from './components/SearchPanel';
-import ToDoList from './components/ToDoList';
+import AppHeader from './components/app-header';
+import SearchPanel from './components/search-panel';
+import ToDoList from './components/todo-list';
+import ItemStatusFilter from './components/item-status-filter';
 
 const App = () => {
   const toDoData = [
@@ -15,6 +16,7 @@ const App = () => {
     <div>
       <AppHeader/>
       <SearchPanel/>
+      <ItemStatusFilter/>
       <ToDoList toDos={ toDoData }/>
     </div>
   );
